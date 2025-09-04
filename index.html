@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="contact">
+    <h2> Our support team</h2>
+    <div class="para-box">
+      <p>Welcome to our support hub! Our dedicated team is here to assist you. Whether you have questions, feedback, or
+        need
+        technical assistance, feel free to reach out. Your satisfaction is our priority.
+      </p>
+    </div>
+    <h2>Karachi , Pakistan</h2>
+    <p>📍 24-C Shahrah-e-Faisal, Karachi, Pakistan</p>
+    <p>📞 +92 (21) 345-67890</p>
+    <p>✉️ info@pakdesign.com</p>
+    <p>🌐 www.pakdesign.com</p>
+    <p>⏰ Mon - Sat: 10am - 7pm</p>
+  </div>
+  <div class="feedback">
+    <form id="myForm">
+      <h3>Send Us a message</h3>
+      <p><label>Email:<br />
+          <input type="text" name="email" placeholder="Enter your email" class="email-input" id="email"/>
+        <span id="emailError" style="color:red"></span></label><br /></p>
+      <p><label>First Name:<br />
+          <input type="text" name="First name" id="fname" placeholder="Enter your first name"  />
+        <span id="fnameError" class="error"></span></label></p>
+      <p><label>Last Name:<br />
+          <input type="text" name="Last name" id="lname" placeholder="Enter your lastname" />
+        <span id="lnameError" class="error"></span></label>
+      </p>
+      <br>
+      <p> <label for="workshop">Select Workshop of Interest:</label><br />
+
+        <select id="workshop" name="workshop">
+          <option value="">-- Select Workshop --</option>
+          <option value="web">💻 Web Development</option>
+          <option value="uiux">🎨 UI/UX Design</option>
+          <option value="ai">🤖 Artificial Intelligence</option>
+          <option value="cyber">🛡 Cyber Security</option>
+        </select><span id="workshopError" class="error"></span><br />
+      </p>
+      <p><label>Mobile:<br />
+          <input type="text" name="mobile" id="mobile" placeholder="Enter your mobile number" class="mobile-input"/>
+         <span id="mobileError" class="error"></span></label></p>
+      <p> <label>Telephone:<br />
+          <input type="text" name="telephone" id="telephone" placeholder="Enter your telephone number" class="tele-input"/>
+        <span id="telephoneError" class="error"></span></label>
+      </p>
+      <p><label for="message">Your Message / Comment:<br>
+        <textarea id="message" name="message" rows="5" cols="40" placeholder="Write your message here..."
+          ></textarea>
+         <span id="messageError" class="error"></span></label>
+      </p>
+      <button type="submit" id="btn">Submit</button>
+
+    </form>
+  </div>
+
+
+  <script src="index.js">
+  </script>
+</body>
+
+</html>
