@@ -12,14 +12,14 @@
 
 <body>
   <div class="contact">
-    <h2> Our support team</h2>
+    <h2 style="color:#452c28;"> Our support team</h2>
     <div class="para-box">
       <p>Welcome to our support hub! Our dedicated team is here to assist you. Whether you have questions, feedback, or
         need
         technical assistance, feel free to reach out. Your satisfaction is our priority.
       </p>
     </div>
-    <h2>Karachi , Pakistan</h2>
+    <h2 style="color:#452c28;">Karachi , Pakistan</h2>
     <p>📍 24-C Shahrah-e-Faisal, Karachi, Pakistan</p>
     <p>📞 +92 (21) 345-67890</p>
     <p>✉️ info@pakdesign.com</p>
@@ -28,54 +28,67 @@
   </div>
   <div class="feedback">
     <form id="myForm">
-      <h3>Send Us a message</h3>
+      <h3 style="color:#452c28;">Send Us a message</h3>
 
-      <label for="email">Email:</label></p>
+      <p><label for="email">Email:</label></p>
       <div class="input-group mb-3">
-        <span class="input-group-text" id="basic-addon1"> <img src="assets/email.png" alt="Email"
+        <span class="input-group-text" id="basic-addon1"> <img src="assets/email.png"
             style="width:18px; height:18px;"></span>
         <input type="text" name="email" id="email" class="form-control email-input" placeholder="Enter your email"
           aria-describedby="basic-addon1">
       </div>
       <span id="emailError" style="color:red"></span>
 
-      <p><label>First Name:<br />
-          <input type="text" name="First name" id="fname" placeholder="Enter your first name" />
-          <span id="fnameError" class="error"></span></label></p>
-      <p><label>Last Name:<br />
-          <input type="text" name="Last name" id="lname" placeholder="Enter your lastname" />
-          <span id="lnameError" class="error"></span></label>
-      </p>
-      <br>
-      <p> <label for="workshop">Select Workshop of Interest:</label><br />
+      <p><label>First name:</label></p>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1"> <img src="assets/profile.png"
+                style="width:18px; height:18px;"></span>
+            <input type="text" name="First name" id="fname" class="form-control" placeholder="Enter your first name"
+              aria-describedby="basic-addon1">
+          </div>
+          <span id="fnameError" class="error" style="color:red"></span>
+        
 
+      <p><label>Last name:</label></p>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"> <img src="assets/profile.png"
+            style="width:18px; height:18px;"></span>
+        <input type="text" name="Last name" id="lname" class="form-control" placeholder="Enter your lirst name"
+          aria-describedby="basic-addon1">
+      </div>
+      <span id="lnameError" class="error" style="color:red"></span>
+
+      <p> <label for="workshop">Select Workshop of Interest:</label><br />
         <select id="workshop" name="workshop">
           <option value="">-- Select Workshop --</option>
           <option value="web">💻 Web Development</option>
           <option value="uiux">🎨 UI/UX Design</option>
           <option value="ai">🤖 Artificial Intelligence</option>
           <option value="cyber">🛡 Cyber Security</option>
-        </select><span id="workshopError" class="error"></span><br />
+        </select><span id="workshopError" class="error" style="color:red"></span><br />
       </p>
-      <label for="mobile">Mobile:</label></p>
+
+      <p><label for="mobile">Mobile:</label></p>
       <div class="input-group mb-3">
-        <span class="input-group-text" id="basic-addon1"> <img src="assets/cell-phone.png" alt="Email"
+        <span class="input-group-text" id="basic-addon1"> <img src="assets/tele (2).png" alt="Email"
             style="width:18px; height:18px;"></span>
         <input type="text" name="mobile" id="mobile" class="form-control mobile-input"
           placeholder="Enter your mobile number" aria-describedby="basic-addon1">
       </div>
-      <span id="mobileError" class="error"></span>
+      <span id="mobileError" class="error" style="color:red"></span>
+
       <p><label for="mobile">Telephone:</label></p>
       <div class="input-group mb-3">
-        <span class="input-group-text" id="basic-addon1"> <img src="assets/telephone.png" alt="Email"
+        <span class="input-group-text" id="basic-addon1"> <img src="assets/tele (1).png" alt="Email"
             style="width:18px; height:18px;"></span>
         <input type="text" name="telephone" id="telephone" class="form-control tele-input"
           placeholder="Enter your telephone number" aria-describedby="basic-addon1">
       </div>
-      <span id="telephoneError" class="error"></span>
+      <span id="telephoneError" class="error" style="color:red"></span>
+
       <p><label for="message">Your Message / Comment:<br>
           <textarea id="message" name="message" rows="5" cols="40" placeholder="Write your message here..."></textarea>
-          <span id="messageError" class="error"></span></label>
+          <span id="messageError" class="error" style="color:red"></span></label>
       </p>
 
       <input class="btn btn-primary" type="submit" value="Submit" id="btn">

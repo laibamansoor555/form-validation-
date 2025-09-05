@@ -3,16 +3,25 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   padding: 20px;
-   background: url(assets/bg1\ \(3\).jfif) no-repeat center center fixed;
+  background color: #FAF9F6;
   background-size: cover;
+  color:#4E342E;
 }
 
 .contact {
- 
   padding: 20px;
-
 }
 
+#btn {
+  background-color: #6D4C41;
+  border-color: #6D4C41;
+  color: #fff;
+}
+
+#btn:hover {
+  background-color: #5D4037;
+  border-color: #5D4037;
+}
 
 .feedback {
   max-width: 600px;
@@ -37,9 +46,11 @@ body {
 
 
 
-.error-border {
-  border: 2px solid red;
+input.form-control.error-border {
+  border: 2px solid red !important;
+  box-shadow: none !important; 
 }
+
 
 .success-border {
   border: 2px solid green;
