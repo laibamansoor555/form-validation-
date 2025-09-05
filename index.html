@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
@@ -27,15 +29,22 @@
   <div class="feedback">
     <form id="myForm">
       <h3>Send Us a message</h3>
-      <p><label>Email:<br />
-          <input type="text" name="email" placeholder="Enter your email" class="email-input" id="email"/>
-        <span id="emailError" style="color:red"></span></label><br /></p>
+
+      <label for="email">Email:</label></p>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"> <img src="assets/email.png" alt="Email"
+            style="width:18px; height:18px;"></span>
+        <input type="text" name="email" id="email" class="form-control email-input" placeholder="Enter your email"
+          aria-describedby="basic-addon1">
+      </div>
+      <span id="emailError" style="color:red"></span>
+
       <p><label>First Name:<br />
-          <input type="text" name="First name" id="fname" placeholder="Enter your first name"  />
-        <span id="fnameError" class="error"></span></label></p>
+          <input type="text" name="First name" id="fname" placeholder="Enter your first name" />
+          <span id="fnameError" class="error"></span></label></p>
       <p><label>Last Name:<br />
           <input type="text" name="Last name" id="lname" placeholder="Enter your lastname" />
-        <span id="lnameError" class="error"></span></label>
+          <span id="lnameError" class="error"></span></label>
       </p>
       <br>
       <p> <label for="workshop">Select Workshop of Interest:</label><br />
@@ -48,20 +57,28 @@
           <option value="cyber">🛡 Cyber Security</option>
         </select><span id="workshopError" class="error"></span><br />
       </p>
-      <p><label>Mobile:<br />
-          <input type="text" name="mobile" id="mobile" placeholder="Enter your mobile number" class="mobile-input"/>
-         <span id="mobileError" class="error"></span></label></p>
-      <p> <label>Telephone:<br />
-          <input type="text" name="telephone" id="telephone" placeholder="Enter your telephone number" class="tele-input"/>
-        <span id="telephoneError" class="error"></span></label>
-      </p>
+      <label for="mobile">Mobile:</label></p>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"> <img src="assets/cell-phone.png" alt="Email"
+            style="width:18px; height:18px;"></span>
+        <input type="text" name="mobile" id="mobile" class="form-control mobile-input"
+          placeholder="Enter your mobile number" aria-describedby="basic-addon1">
+      </div>
+      <span id="mobileError" class="error"></span>
+      <p><label for="mobile">Telephone:</label></p>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"> <img src="assets/telephone.png" alt="Email"
+            style="width:18px; height:18px;"></span>
+        <input type="text" name="telephone" id="telephone" class="form-control tele-input"
+          placeholder="Enter your telephone number" aria-describedby="basic-addon1">
+      </div>
+      <span id="telephoneError" class="error"></span>
       <p><label for="message">Your Message / Comment:<br>
-        <textarea id="message" name="message" rows="5" cols="40" placeholder="Write your message here..."
-          ></textarea>
-         <span id="messageError" class="error"></span></label>
+          <textarea id="message" name="message" rows="5" cols="40" placeholder="Write your message here..."></textarea>
+          <span id="messageError" class="error"></span></label>
       </p>
-      <button type="submit" id="btn">Submit</button>
 
+      <input class="btn btn-primary" type="submit" value="Submit" id="btn">
     </form>
   </div>
 

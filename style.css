@@ -3,50 +3,48 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   padding: 20px;
+   background: url(assets/bg1\ \(3\).jfif) no-repeat center center fixed;
+  background-size: cover;
 }
 
 .contact {
-  background: #f8f9fa;
+ 
   padding: 20px;
 
 }
 
 
-  .feedback {
-    max-width: 600px;
-    margin: 20px auto;  
-    padding: 15px;
-    border: 2px solid #000;
-    box-sizing: border-box;
-  }
-
-  .feedback input,
-  .feedback select,
-  .feedback textarea,
-  .feedback button {
-    width: 100%; 
-    margin-bottom: 10px;
-    box-sizing: border-box;
-  }
-.email-input {
-  padding-left: 30px;  
-  background:  url(assets/email.png) no-repeat 8px center; 
+.feedback {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 15px;
+  border: 2px solid #000;
+  box-sizing: border-box;
 }
 
-.mobile-input {
-  padding-left: 30px;  
-  background:  url(assets/cell-phone.png) no-repeat 8px center; 
+
+
+.feedback select,
+.feedback textarea,
+.feedback button {
+  width: 100%;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  padding: 12px;
+  font-size: 16px;
+  height: 45px;
 }
-.tele-input {
-  padding-left: 30px;  
-  background:  url(assets/telephone.png) no-repeat 8px center; 
-}
+
+
+
 .error-border {
   border: 2px solid red;
 }
+
 .success-border {
   border: 2px solid green;
 }
+
 @media (max-width: 768px) {
   body {
     grid-template-columns: 1fr;
